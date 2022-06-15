@@ -1,0 +1,160 @@
+/* WebSite Name: Bryzos
+   Made by: Ritesh Gorle
+   Created: june 2022
+   Content: Data
+*/
+
+/*****************************************
+Table Of Contents:
+
+01. BASIC CSS Style
+02. Media Queries HIDE/SHOW BY ID
+03. responsive TABLE SECTION 03
+
+******************************************/
+
+
+/******************************/
+/*    01. BASIC CSS Style     */
+/******************************/
+
+
+body{
+      background-color:#e0e0d1 ;
+      font-family: sans-serif;
+    }
+
+
+
+h3, h4, h5{
+    
+    font-weight: 600;
+  }
+
+
+.first{
+  box-shadow: 1px 0px 4px 2px gray;
+  border-radius: 10px;
+
+}
+
+
+.Second{
+  box-shadow: 1px 0px 4px 2px gray;
+  border-radius: 10px;
+
+}
+
+
+.tabl{
+  box-shadow: 1px 0px 4px 0px gray;
+  border-radius: 10px;
+
+}
+
+
+
+/********************************************/
+/*    02. Media Queries HIDE/SHOW BY ID     */
+/********************************************/
+    
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  #my-content { display: none; }  /* hide it elsewhere */
+
+  #why-content { display: block; }
+
+  h3{
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  h4{
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+
+  .sectwo{
+    font-size: 13px;
+  }
+
+  #secthree{
+    font-size: 15px;
+    font-weight: bold;
+
+  }
+ 
+
+}
+
+@media screen and (min-width: 451px) and (max-width: 1200px) {
+  #my-content { display:block; }  /* show it on big screens */
+
+  #why-content { display: none; }
+
+}
+
+
+
+
+/********************************************/
+/*    03. responsive TABLE SECTION 03     */
+/********************************************/
+
+
+@media (max-width: 500px) {
+  .tab .thed {
+    display: none;
+  }
+
+  .tab,
+  .tab .tbod,
+  .tab .true,
+  .tab .tad {
+    display: block;
+    width: 100%;
+  }
+  .tab .true {
+    margin-bottom: 15px;
+  }
+  .tab .tad {
+    padding-left: 50%;
+    text-align: left;
+    position: relative;
+  }
+  .tab .tad::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color:gray;
+    text-align: left;
+  }
+
+
+
+
+  h3{
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  h4{
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+
+  .sectwo{
+    font-size: 13px;
+  }
+
+  #secthree{
+    font-size: 15px;
+    font-weight: bold;
+
+  }
+}
